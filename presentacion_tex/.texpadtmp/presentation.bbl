@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{mlmarcos}
+M.~L. de~Prado, {\em Advances in Financial Machine Learning}.
+\newblock Wiley Publishing, 1st~ed., 2018.
+
+\bibitem{mlassetmarcos}
+M.~M. López~de Prado, {\em Machine Learning for Asset Managers}.
+\newblock Elements in Quantitative Finance, Cambridge University Press, 2020.
+
+\bibitem{Mark1}
+H.~Markowitz, ``Portfolio selection,'' {\em Journal of Finance}, vol.~7, no.~1,
+  pp.~77--91, 1952.
+
+\bibitem{cla}
+H.~Markowitz, ``The optimization of a quadratic function subject to linear
+  constraints,'' {\em Naval Research Logistics Quarterly}, vol.~3, no.~1a2,
+  pp.~111--133, 1956.
+
+\bibitem{mlcla}
+D.~H. Bailey and M.~López~de Prado, ``An open-source implementation of the
+  critical-line algorithm for portfolio optimization,'' 2013.
+\newblock Available at SSRN: https://ssrn.com/abstract=2197616.
+
+\bibitem{mlhpr}
+M.~López~de Prado, ``Building diversified portfolios that outperform
+  out-of-sample,'' {\em Journal of Portfolio Management}, 2016.
+\newblock Available at SSRN: https://ssrn.com/abstract=2708678.
+
+\end{thebibliography}

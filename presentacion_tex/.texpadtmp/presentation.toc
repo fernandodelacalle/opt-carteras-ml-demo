@@ -1,0 +1,8 @@
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@sectionintoc {2}{Consideraciones Previas}{9}{0}{2}
+\beamer@sectionintoc {3}{Modern Portfolio Theory}{39}{0}{3}
+\beamer@sectionintoc {4}{Introducci\IeC {\'o}n al Machine Learning}{72}{0}{4}
+\beamer@sectionintoc {5}{Clustering Jer\IeC {\'a}rquico Aglomerativo}{78}{0}{5}
+\beamer@sectionintoc {6}{Hierarchical Risk Parity}{86}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{105}{0}{7}

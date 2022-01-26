@@ -1,0 +1,8 @@
+\frametitle{Conclusiones}
+\begin{itemize}[<+- | alert@+>]
+			\item Markowitz es la cartera óptima \textit{in-sample}.
+			\item Como hemos visto tiene muchos inconvenientes asociados.
+			\item El uso de técnicas de machine learning nos puede valer para analizar, como para construir carteras.
+			\item Hemos visto uno de los algoritmos de clustering más sencillos.
+			\item Su aplicación nos permite obtener carteras más diversificadas y que tienden a funcionar mejor \texttt{out-of-sample}.
+	\end{itemize}

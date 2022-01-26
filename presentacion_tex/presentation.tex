@@ -1,0 +1,102 @@
+\documentclass[10pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\spanishdecimal{.}
+
+
+% Fonts
+\usetheme{metropolis}
+% graphics, figures, captions
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{makeidx} 
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{caption}
+% for justify
+\usepackage{ragged2e}
+\apptocmd{\frame}{}{\justifying}{} % Allow optional arguments after frame.
+% Tikz diagrams and 
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+\usetikzlibrary{patterns}
+\usetikzlibrary{calc}
+% pgfplots plots
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usetikzlibrary{pgfplots.groupplots}
+\pgfplotsset{
+    compat=newest, % Allows drawing of circles. moves axis labels near ticklabels (respects tick label widths)
+    standard/.style={every axis/.append style={font=\tiny}},  
+}
+\pgfplotsset{every axis/.append style={
+    		font=\footnotesize,
+    		thin,
+    		tick style={ultra thin}}
+}
+% Color List for the plots
+\usepgfplotslibrary{colorbrewer}
+% Custom colors                 
+\definecolor{fc1}{RGB}{27,158,119}
+\definecolor{fc2}{RGB}{217,95,2}
+\definecolor{fc3}{RGB}{117,112,179}
+\definecolor{fc4}{RGB}{231,41,138}
+\definecolor{fc5}{RGB}{102,166,30}
+\definecolor{fc6}{RGB}{230,171,2}
+\definecolor{fc7}{RGB}{166,118,29}
+\definecolor{fc8}{RGB}{102,102,102}
+\definecolor{uc3m}{RGB}{30, 46, 118}
+\tikzset{onslide/.code args={<#1>#2}{%
+  \only<#1>{\pgfkeysalso{#2}} % \pgfkeysalso doesn't change the path
+}}
+\tikzset{temporal/.code args={<#1>#2#3#4}{%
+  \temporal<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}}{\pgfkeysalso{#4}} % \pgfkeysalso doesn't change the path
+}}
+\tikzstyle{highlight}=[fill=fc1!30]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[round]{natbib}
+\usepackage[square,sort,comma,numbers]{natbib}
+%\bibliographystyle{plainnat}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{appendixnumberbeamer}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Construcción de Carteras usando Machine Learning}
+\date{\today}
+\author{Fernando de la Calle Silos}
+\institute{BME Inntech \\ Instituto BME}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% To Print 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\captionsetup[subfigure]{labelformat=empty}
+\maketitle
+\begin{frame}{Contenidos}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{parts/intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{parts/features}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{parts/con}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[allowframebreaks]{Referencias}
+  \bibliography{references}
+  %\bibliographystyle{plainnat}
+  \bibliographystyle{ieeetr}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
